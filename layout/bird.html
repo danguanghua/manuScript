@@ -1,0 +1,58 @@
+<!--
+ * @Author: Danylko
+ * @Date: 2022-07-19 06:13:41
+ * @LastEditors: Danylko
+ * @LastEditTime: 2022-07-19 07:05:47
+ * @Description: 双飞翼布局
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, footer {
+            height: 80px;
+            background-color: blue;
+        }
+        footer {
+            clear : both;
+        }
+        .wrapper, .left, .right {
+            float: left;
+        }
+
+        .wrapper{
+            width: 100%;
+        }
+        .content {
+            height: 400px;
+            margin: 0 200px;
+            background-color: red;
+        }
+        .left {
+            width: 200px;
+            height: 400px;
+            margin-left: -100%;
+            background-color: orange;
+        }
+        .right {
+            width: 200px;
+            height: 400px;
+            margin-left: -200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>head</header>
+    <div class="wrapper">
+        <div class="content">content</div>
+    </div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+    <footer>foot</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!--
+ * @Author: Danylko
+ * @Date: 2022-08-04 15:12:35
+ * @LastEditors: Danylko
+ * @LastEditTime: 2022-08-04 15:22:32
+ * @Description: 两栏布局
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, footer {
+            height: 80px;
+            background-color: grey;
+        }
+        .content {
+            height: 400px;
+        }
+        .left {
+            float: left;
+            width: 200px;
+            height: 400px;
+            background-color: blue;
+        }
+        .right {
+            width: auto;
+            height: 400px;
+            margin-left: 200px;
+            background-color: red;
+        }
+        .box {
+            height: 80px;
+            width: 80px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="content">
+        <div class="left">left</div>
+        <div class="right">
+            <div class="box">xxxx</div>
+        </div>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>

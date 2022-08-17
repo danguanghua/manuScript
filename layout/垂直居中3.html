@@ -1,0 +1,37 @@
+<!--
+ * @Author: Danylko
+ * @Date: 2022-08-04 16:53:57
+ * @LastEditors: Danylko
+ * @LastEditTime: 2022-08-04 16:56:08
+ * @Description: absolute + calc
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            border: solid 1px red;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box">xxx</div>
+    </div>
+</body>
+</html>

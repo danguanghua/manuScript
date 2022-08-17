@@ -1,0 +1,40 @@
+<!--
+ * @Author: Danylko
+ * @Date: 2022-08-04 16:44:27
+ * @LastEditors: Danylko
+ * @LastEditTime: 2022-08-04 16:51:29
+ * @Description: absolute margin:auto
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            border: solid 1px red;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            position:absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box">xx</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+	"devDependencies": {
+		"koa": "^2.13.4",
+		"promises-aplus-tests": "^2.1.2"
+	},
+	"scripts": {
+		"test": "promises-aplus-tests promise"
+	}
+}
