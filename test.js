@@ -254,3 +254,40 @@ Promise.defer = Promise.deferred = function(){
     })
     return res;
 }
+
+var js = {
+    da : 1
+}
+
+var dd = JSON.parse(JSON.stringify(js));
+console.log(js == dd);
+console.log(js === dd)
+console.log(JSON.stringify(js))
+
+const set = new Set([1,1,2,2,2,4,5,3]);
+console.log(set);
+console.log(Array.from(set));
+
+const map = new Map();
+
+map.set(3, [[0, 0]]);
+if (map.has(3)) {
+	map.set(3, map.get(3).push([1,1]));
+}        
+console.log(map);
+
+let obj = {name: "Mark", age:30};
+console.log(Object.keys(obj).length)
+
+let r = 'a'
+console.log(r.toUpperCase())
+
+let a = [1,6,4];
+console.log(a.toString())
+// console.log(a.toLocalString())
+console.log(a.join(''))
+
+var b = function b() {
+    console.log('xx');
+}
+b();

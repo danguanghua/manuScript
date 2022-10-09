@@ -36,3 +36,20 @@ console.log(son);
 // console.log(Object.getPrototypeOf(obj1))
 // console.log(Object.getPrototypeOf(obj2))
 
+function myNew(constructor, ...args) {
+    if (typeof constructor !== 'function') {
+        throw new TypeError(constructor + 'is not constructor');
+    }
+    const obj = {};
+    obj.__ptoto__ = constructor.prototype instanceof Object ? constructor.prototype : Object.prototype;
+    const res = constructor.call(obj, ...args);
+    return res instanceof Object ? res : obj;
+}
+
+function father(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+const test = myNew(father, 'Danylko', 27);
+console.log(test)
